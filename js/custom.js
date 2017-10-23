@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$('#nav-show').addClass('hide');
 		$('#nav-hide').removeClass('hide');
 		$('#nav-hide').addClass('show');
-		$('#header-navmobile').addClass('header-navmobile-show');
+		$('#header-nav-mobile').addClass('header-nav-mobile-show');
 	});
 	// RESPONSIVE MENU (HIDE)
 	$('#nav-hide').click(function() {
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		$('#nav-show').addClass('show');
 		$('#nav-hide').removeClass('show');
 		$('#nav-hide').addClass('hide');
-		$('#header-navmobile').removeClass('header-navmobile-show');
+		$('#header-nav-mobile').removeClass('header-nav-mobile-show');
 	});
 
 

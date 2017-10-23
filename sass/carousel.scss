@@ -225,9 +225,29 @@ $height-slideshow-image: 545px;
 }
 // SM
 @media (min-width: 768px) and (max-width: 991px) {
+	#slider {
+		.slidecontent {
+			top: 175px;
+			.slidecontent-container {
+				width: 100%;
+				padding-left: 0px;
+			}
+		}
+		#main-carousel { .carousel-indicators { bottom: 20px; } }
+	}
 	.slider-outer-container { height: 590px; }
 }
 // XS
 @media (max-width: 767px) {
+	#slider {
+		.slidecontent {
+			top: 175px;
+			.slidecontent-container {
+				width: 100%;
+				padding-left: 0px;
+			}
+		}
+		#main-carousel { .carousel-indicators { bottom: 20px; } }
+	}
 	.slider-outer-container { height: 590px; }
 }
