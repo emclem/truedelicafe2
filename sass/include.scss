@@ -1,0 +1,88 @@
+// COLORS
+$color-facebook: #00F;
+$color-twitter: #AAF;
+$color-instagram: #B71;
+$color-youtube: #F00;
+
+$color-yellow-lightest: #f1f884;
+$color-yellow-lighter: #e7f151;
+$color-yellow-light: #e1ed28;
+$color-yellow: #ffff00;
+$color-yellow-dark: #d6d600;
+$color-yellow-darker: #b8b800;
+$color-yellow-darkest: #989800;
+
+$color-brown-lightest: #a36f56;
+$color-brown-lighter: #8a5940;
+$color-brown-light: #71432b;
+$color-brown: #5e341f;
+$color-brown-dark: #4c2714;
+$color-brown-darker: #432110;
+$color-brown-darkest: #3d1d0d;
+
+$color-dbrown: #6a371c;
+$color-dbrown-dark: #332017;
+
+$color-orange-lightest: #ffde00;
+$color-orange-lighter: #ffc600;
+$color-orange-light: #ffb400;
+$color-orange: #F80;
+$color-orange-dark: #ff5a00;
+$color-orange-darker: #d24a00;
+$color-orange-darkest: #ae2900;
+
+$color-black: #000;
+$color-white: #FFF;
+$color-red: #F00;
+
+
+
+
+// EXTEND
+%clearspace-extend {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+
+
+// MIXIN
+@mixin clearspace {
+	padding: 0px;
+	margin: 0px auto;
+} 
+@mixin round($radius: 50%) {
+	border-radius: $radius;
+	-o-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;	
+}
+@mixin transition($duration: 250ms) {
+	transition: all $duration ease;
+	-o-transition: all $duration ease;
+	-ms-transition: all $duration ease;
+	-moz-transition: all $duration ease;
+	-webkit-transition: all $duration ease;
+}
+@mixin shadow($thickness: 25px, $alpha: 0.25) {
+	box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-o-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-ms-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-moz-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-webkit-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+}
+@mixin textshadow($thickness: 10px, $alpha: 0.5) {
+	text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-o-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-ms-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-moz-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-webkit-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+}
+@mixin glow($thickness: 25px, $color: #FFF, $alpha: 0.25) {
+	box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-o-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-ms-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-moz-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-webkit-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+}
